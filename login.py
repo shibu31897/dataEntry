@@ -22,7 +22,6 @@ class Login:
     def login(self):
         try:
             login = self.auth.sign_in_with_email_and_password(self.email, self.password)
-            print("Successfully Signed In")
             return login
         except:
             print("Something went wrong")
